@@ -1,5 +1,5 @@
 const fs = require('fs'); //use for create files like .css
-const jsonData = require('./token.json'); // recive Design Tokens json file
+const jsonData = require('../figma/token.json'); // recive Design Tokens json file
 
 
 const styleLite = {
