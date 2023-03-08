@@ -3,6 +3,8 @@ name: Node app
 
 on:
   push:
+    branches:
+    - main
     paths:
       - 'packages/main.js'
       - 'figma/token.json'
@@ -18,3 +20,9 @@ jobs:
       - run: npm install
       - run: node packages/main.js
         working-directory: .
+      - run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
+          git add .
+          git commit -m "Generated CSS files"
+          git push
