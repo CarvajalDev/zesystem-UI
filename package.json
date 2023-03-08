@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "json-to-css": "^0.1.0",
+    "viewport-size": "^0.0.1"
+  }
+}

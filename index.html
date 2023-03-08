@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./ZSLite-ze.css">
+    <style>
+        .ze-pos-login-input{
+        font-family: var(--brand-typography-font2);
+        border-radius: 100vw;
+        border: 1px solid var(--brand-color-gray100);
+        background-color: var(--brand-color-gray400);
+        font-weight: var(--font-weight-semibold);
+        font-size: 2vw;
+        }
+
+        .ze-pos-login-info-text{
+        font-family: var(--brand-typography-font2);
+        font-size: 1vw;
+        font-weight: var(--font-weight-regular);
+        color: var(--brand-color-gray600);
+        letter-spacing: 0.1vw;
+        }
+
+        .ze-pos-login-input-login-button:disabled {
+        font-family: var(--brand-typography-font2);
+        border-radius: var(--brand-radius-medium);
+        border: 1px solid var(--brand-color-gray100);
+        color: var(--brand-color-gray500);
+        background-color: var(--brand-color-gray300);
+        font-weight: var(--font-weight-semibold);
+        font-size: 1.2vw;
+        letter-spacing: 0.15vw;
+        }
+
+        .ze-pos-login-input-login-button{
+        color: var(--brand-color-buttonPimary-txt);
+        background-color: var(--brand-color-buttonPrimary-bg);
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Buttons -->
+    <p><button class="button-primary">Iniciar Sesíon en el nuevo ZeSystem Lite</button></p>
+    <p><button class="button-secondary">Iniciar Sesíon en el nuevo ZeSystem Lite</button></p>
+    <p><button class="button-tertiary">Iniciar Sesíon en el nuevo ZeSystem Lite</button></p>
+    <p><button class="button-disabled">Iniciar Sesíon en el nuevo ZeSystem Lite</button></p>
+
+    <!-- Input Text Field -->
+    <div class="input-container">
+        <input type="text" id="fname" name="fname" value="" aria-labelledby="label-fname" />
+        <label class="label" for="fname" id="label-fname">
+          <div class="text">Escribe algo nice...</div>
+        </label>
+    </div>
+</body>
+
+<script>
+    const input = document.getElementById('fname');
+
+    input.addEventListener('input', () => {
+    input.setAttribute('value', input.value);
+    });
+
+     /* Convert px unit to vw & vh
+  ScreenSizeW = [320, 375, 414, 768, 1024, 1280, 1366, 1440, 1920, 1536, 1600, 2560];
+  screenSizeH = [1080, 768, 864, 900, 720, 1024, 1440];
+
+  const valueInPx = brand.desktopFontSize.h1;
+
+  for (let i = 0; i < ScreenSizeW.length; i++){
+    const screenWidth = ScreenSizeW[i];
+    const valueInVw = (valueInPx / screenWidth) * 100;
+  }
+  for (let i = 0; i < ScreenSizeH.length; i++){
+    const screenHeigth = ScreenSizeH[i];
+    const valueInVh = (valueInPx / screenHeigth) * 100;
+  } */
+
+</script>
+
+</html>
