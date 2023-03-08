@@ -6,8 +6,7 @@ on:
     paths:
       - 'packages/main.js'
       - 'figma/token.json'
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   build:
@@ -17,13 +16,16 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm install
-      - run: node packages/main.js
-      - run: |
+      - name: install dependencies
+        run: npm install
+      - name: run app 
+        run: node packages/main.js
+      - name: push css files
+        run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
           git add *.css
           git commit -m "Generated CSS files"
           git push
-        working-directory: .
+        
       
