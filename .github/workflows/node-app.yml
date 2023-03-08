@@ -16,11 +16,13 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - name: install dependencies
+      - name: Install dependencies
         run: npm install
-      - name: run app 
+
+      - name: Generate CSS files
         run: node packages/main.js
-      - name: push css files
+
+      - name: Commit generated CSS files
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
