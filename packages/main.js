@@ -585,7 +585,7 @@ for (let brand of styleLite.brands) {
   `
 
   // Write the Zslite CSS template to a file
-  fs.writeFile(`./packages/ZSLite-${brand.name.toLowerCase()}.css`, zeSystenLite, (err) => {
+  fs.writeFile(`ZSLite-${brand.name.toLowerCase()}.css`, zeSystenLite, (err) => {
     if (err) throw err
     console.log(`Created CSS file for ${brand.name}`)
   })
