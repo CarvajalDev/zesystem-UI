@@ -18,9 +18,9 @@ jobs:
         id: check-changes
         run: |
           if [ -n "$(git diff --name-only ${{ github.event.before }} ${{ github.event.after }} figma/token.json)" ]; then
-            echo "::set-output name=CHANGED::true"
+            echo "CHANGED=true" >> $GITHUB_ENV
           else
-            echo "::set-output name=CHANGED::false"
+            echo "CHANGED=false" >> $GITHUB_ENV
           fi
       - name: Install dependencies
         if: steps.check-changes.outputs.CHANGED == 'true' # Solo si el archivo token.json ha cambiado
