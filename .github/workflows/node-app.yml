@@ -41,8 +41,7 @@ jobs:
           git config --global user.name $GIT_USERNAME
           git config --global user.email $GIT_EMAIL
           git commit -m 'Add generated CSS files'
-          git remote add origin https://github.com/CarvajalDev/zesystem-UI.git
-          git branch -M main
+          git remote set-url origin https://github.com/CarvajalDev/zesystem-UI.git
           git push -u origin main
 
       
