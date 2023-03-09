@@ -3,10 +3,7 @@ name: Node app
 
 on:
   push:
-    branches:
-      - main
     paths:
-      - 'packages/main.js'
       - 'figma/token.json'
 
 jobs:
@@ -17,7 +14,15 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm install
-      - run: node packages/main.js
-        working-directory: .
-
+      - name: Check if token.json has changed
+        id: check-changes
+        run: echo ::set-output name=CHANGED::$(if [ -n "$(git diff --name-only ${{ github.event.before }} ${{ github.event.after }} figma/token.json)" ]; then echo "true"; else echo "false"; fi)
+      - name: Install dependencies
+        if: steps.check-changes.outputs.CHANGED == 'true' # Solo si el archivo token.json ha cambiado
+        run: npm install
+      - name: Generate CSS files
+        if: steps.check-changes.outputs.CHANGED == 'true' # Solo si el archivo token.json ha cambiado
+        run: node packages/main.js
+      - name: Copy CSS files to packages directory
+        if: steps.check-changes.outputs.CHANGED == 'true' # Solo si el archivo token.json ha cambiado
+        run: cp *.css packages/
