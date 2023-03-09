@@ -28,7 +28,7 @@ jobs:
         uses: EndBug/add-and-commit@v7
         with:
           message: 'Add generated CSS files'
-          add: 'css-files/*'
+          add: 'packages/*.css'
           name: 'CarvajalDev'
           email: 'h_carvajal@outlook.es'
       
