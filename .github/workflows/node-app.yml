@@ -3,6 +3,8 @@ name: Node app
 
 on:
   push:
+    branches:
+      - main
     paths:
       - 'packages/main.js'
       - 'figma/token.json'
