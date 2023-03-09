@@ -38,7 +38,7 @@ jobs:
         with:
           ref: main
           repository: ${{ github.repository }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.ZESYSTEM_TOKEN }}
           path: repo
 
       - name: Move generated CSS files
@@ -58,5 +58,5 @@ jobs:
         working-directory: repo
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.ZESYSTEM_TOKEN }}
           branch: main
