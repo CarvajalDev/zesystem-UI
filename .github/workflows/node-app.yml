@@ -1,5 +1,4 @@
-
-name: Node app
+name: node app
 
 on:
   push:
@@ -7,32 +6,29 @@ on:
       - 'figma/token.json'
 
 jobs:
-  build:
+  actualizar-css:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version: 16
-      - name: Check if token.json has changed
-        id: check-changes
-        run: |
-          if git rev-parse "${{ github.event.before }}" >/dev/null 2>&1; then
-            before_commit="${{ github.event.before }}"
-          else
-            before_commit="HEAD~1"
-          fi
-          if [ -n "$(git diff --name-only $before_commit ${{ github.event.after }} figma/token.json)" ]; then
-            echo "CHANGED=true" >> $GITHUB_ENV
-          else
-            echo "CHANGED=false" >> $GITHUB_ENV
-          fi
+          node-version: '16.x'
+
       - name: Install dependencies
-        if: steps.check-changes.outputs.CHANGED == 'true' # Solo si el archivo token.json ha cambiado
         run: npm install
-      - name: Generate CSS files
-        if: steps.check-changes.outputs.CHANGED == 'true' # Solo si el archivo token.json ha cambiado
+
+      - name: Run main.js
+        env:
+          FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
         run: node packages/main.js
-      - name: Copy CSS files to packages directory
-        if: steps.check-changes.outputs.CHANGED == 'true' # Solo si el archivo token.json ha cambiado
-        run: cp *.css packages/
+
+      - name: Add generated CSS files
+        uses: actions/upload-artifact@v2
+        with:
+          name: generated-css
+          path: |
+            packages/*.css
