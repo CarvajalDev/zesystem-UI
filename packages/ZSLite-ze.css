@@ -45,7 +45,7 @@
       --brand-color-primary300: undefined;
       --brand-color-primary500: undefined;
       --brand-color-secondary50: #ff595a;
-      --brand-color-secondary300: #00b912;
+      --brand-color-secondary300: #005cb9;
       --brand-color-secondary500: undefined;
       --brand-color-tertiary50: #a2c7e2;
       --brand-color-tertiary100: #ffb1b9;
@@ -78,13 +78,13 @@
       --brand-color-status300: #fe9339;
       --brand-color-status500: #b00020;
 
-      --brand-color-buttonPrimary-bg: #00b912;
+      --brand-color-buttonPrimary-bg: #005cb9;
       --brand-color-buttonPimary-txt: #ffffff;
       --brand-color-buttonPimary-hvr: #4585C6;
 
       --brand-color-buttonSecondary-bg: #f1f2f2;
-      --brand-color-buttonSecondary-txt: #00b912;
-      --brand-color-buttonSecondary-hvr: #00b912;
+      --brand-color-buttonSecondary-txt: #005cb9;
+      --brand-color-buttonSecondary-hvr: #005cb9;
 
       --brand-color-buttonTertiary-bg: #ff595a;
       --brand-color-buttonTertiary-txt: #ffffff;
