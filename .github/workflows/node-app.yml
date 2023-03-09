@@ -33,17 +33,16 @@ jobs:
 
       - name: Add CSS files to repository
         env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GIT_USERNAME: 'CarvajalDev'
           GIT_EMAIL: 'h_carvajal@outlook.es'
         run: |
-          mkdir -p ~/.ssh
-          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -t rsa git.example.com >> ~/.ssh/known_hosts
           git add packages/*.css
           git config --global user.name $GIT_USERNAME
           git config --global user.email $GIT_EMAIL
           git commit -m 'Add generated CSS files'
-          git push
+          git remote add origin https://github.com/CarvajalDev/zesystem-UI.git
+          git branch -M main
+          git push -u origin main
+
       
