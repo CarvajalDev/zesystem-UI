@@ -17,10 +17,10 @@ jobs:
       - name: Check if token.json has changed
         id: check-changes
         run: |
-          if [ -z "${{ github.event.before }}" ]; then
-            before_commit="HEAD~1"
-          else
+          if git rev-parse "${{ github.event.before }}" >/dev/null 2>&1; then
             before_commit="${{ github.event.before }}"
+          else
+            before_commit="HEAD~1"
           fi
           if [ -n "$(git diff --name-only $before_commit ${{ github.event.after }} figma/token.json)" ]; then
             echo "CHANGED=true" >> $GITHUB_ENV
