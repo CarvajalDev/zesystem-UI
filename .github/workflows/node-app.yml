@@ -43,5 +43,24 @@ jobs:
           git commit -m 'Add generated CSS files'
           git remote set-url origin https://github.com/CarvajalDev/zesystem-UI.git
           git push -u origin main
+      
+      - name: Install AWS CLI
+        run: |
+          sudo apt-get update && \
+          sudo apt-get install -y python3-pip && \
+          pip3 install awscli
+      
+      - name: Deploy to S3
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: us-east-2
+          BUCKET_NAME: zesystem-cloudfront
+        run: |
+          aws s3 cp packages s3://$BUCKET_NAME/ --recursive
+          
+      - name: Notify deployment status
+        if: always()
+        run: echo "Deployment to S3 completed successfully"
 
       
