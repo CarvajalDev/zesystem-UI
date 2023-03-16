@@ -79,8 +79,8 @@
       --brand-color-status500: #b00020;
 
       --brand-color-buttonPrimary-bg: #28808b;
-      --brand-color-buttonPimary-txt: #ffffff;
-      --brand-color-buttonPimary-hvr: #c8e3e8;
+      --brand-color-buttonPrimary-txt: #ffffff;
+      --brand-color-buttonPrimary-hvr: #c8e3e8;
 
       --brand-color-buttonSecondary-bg: #28808b;
       --brand-color-buttonSecondary-txt: #28808b;
@@ -158,7 +158,7 @@
     .button-primary{
       background-color: var(--brand-color-buttonPrimary-bg);
       border: none;
-      color: var(--brand-color-buttonPimary-txt);
+      color: var(--brand-color-buttonPrimary-txt);
       padding: 16px 32px;
       text-align: center;
       text-decoration: none;
@@ -171,7 +171,7 @@
     }
 
     .button-primary:hover {
-      background-color: var(--brand-color-buttonPimary-hvr);
+      background-color: var(--brand-color-buttonPrimary-hvr);
     }
 
     .button-secondary{      
