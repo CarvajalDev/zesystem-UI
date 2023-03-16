@@ -349,8 +349,8 @@ for (let brand of styleLite.brands) {
       --brand-color-status500: ${styleLite.brands[0].colors.status500};
 
       --brand-color-buttonPrimary-bg: ${brand.buttonPrimary.bgColor};
-      --brand-color-buttonPimary-txt: ${brand.buttonPrimary.textColor};
-      --brand-color-buttonPimary-hvr: ${brand.buttonPrimary.hoverColor};
+      --brand-color-buttonPrimary-txt: ${brand.buttonPrimary.textColor};
+      --brand-color-buttonPrimary-hvr: ${brand.buttonPrimary.hoverColor};
 
       --brand-color-buttonSecondary-bg: ${brand.buttonSecondary.bgColor};
       --brand-color-buttonSecondary-txt: ${brand.buttonSecondary.textColor};
@@ -428,7 +428,7 @@ for (let brand of styleLite.brands) {
     .button-primary{
       background-color: var(--brand-color-buttonPrimary-bg);
       border: none;
-      color: var(--brand-color-buttonPimary-txt);
+      color: var(--brand-color-buttonPrimary-txt);
       padding: 16px 32px;
       text-align: center;
       text-decoration: none;
@@ -441,7 +441,7 @@ for (let brand of styleLite.brands) {
     }
 
     .button-primary:hover {
-      background-color: var(--brand-color-buttonPimary-hvr);
+      background-color: var(--brand-color-buttonPrimary-hvr);
     }
 
     .button-secondary{      
