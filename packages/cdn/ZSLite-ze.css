@@ -48,7 +48,7 @@
       --brand-color-secondary300: #005cb9;
       --brand-color-secondary500: undefined;
       --brand-color-tertiary50: #D7E2FB;
-      --brand-color-tertiary100: #ffb1b9;
+      --brand-color-tertiary100: #FFD7DB;
       --brand-color-tertiary200: #c7a0ce;
       --brand-color-tertiary300: #f6dfa4;
       --brand-color-tertiary400: #d5b49e;
@@ -88,7 +88,7 @@
 
       --brand-color-buttonTertiary-bg: #ff595a;
       --brand-color-buttonTertiary-txt: #ffffff;
-      --brand-color-buttonTertiary-hvr: #ffb1b9;
+      --brand-color-buttonTertiary-hvr: #FFD7DB;
 
       /* Border Radius size */
       --brand-radius-small: 4px;
