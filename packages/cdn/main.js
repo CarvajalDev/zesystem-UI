@@ -1,5 +1,5 @@
 const fs = require('fs'); //use for create files like .css
-const jsonData = require('../figma/token.json'); // recive Design Tokens json file
+const jsonData = require('../../figma/token.json'); // recive Design Tokens json file
 
 
 const styleLite = {
@@ -585,7 +585,7 @@ for (let brand of styleLite.brands) {
   `
 
   // Write the Zslite CSS template to a file
-  fs.writeFile(`./packages/ZSLite-${brand.name.toLowerCase()}.css`, zeSystenLite, (err) => {
+  fs.writeFile(`./packages/cdn/ZSLite-${brand.name.toLowerCase()}.css`, zeSystenLite, (err) => {
     if (err) throw err
     console.log(`Created CSS file for ${brand.name}`)
   })
