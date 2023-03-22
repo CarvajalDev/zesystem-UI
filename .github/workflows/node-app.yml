@@ -29,7 +29,7 @@ jobs:
         run: npm install
 
       - name: Run main.js
-        run: node packages/main.js
+        run: node packages/cdn/main.js
 
       - name: Add CSS files to repository
         env:
@@ -37,7 +37,7 @@ jobs:
           GIT_USERNAME: 'CarvajalDev'
           GIT_EMAIL: 'h_carvajal@outlook.es'
         run: |
-          git add packages/*.css
+          git add packages/cdn/*.css
           git config --global user.name $GIT_USERNAME
           git config --global user.email $GIT_EMAIL
           git commit -m 'Add generated CSS files'
