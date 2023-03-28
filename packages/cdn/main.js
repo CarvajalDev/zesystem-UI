@@ -548,31 +548,31 @@ for (let brand of styleLite.brands) {
      }
 
     @media (max-width: 640px) { 
-      .brand-${brand.name.toLowerCase()} h1 {
+      h1 {
         font-size: var(--font-size-m-h1);
       }
   
-      .brand-${brand.name.toLowerCase()} h2 {
+      h2 {
         font-size: var(--font-size-m-h2);
       }
   
-      .brand-${brand.name.toLowerCase()} h3 {
+      h3 {
         font-size: var(--font-size-m-h3);
       }
   
-      .brand-${brand.name.toLowerCase()} h4 {
+      h4 {
         font-size: var(--font-size-m-h4);
       }
   
-      .brand-${brand.name.toLowerCase()} h5 {
+      h5 {
         font-size: var(--font-size-m-h5);
       }
   
-      .brand-${brand.name.toLowerCase()} h6 {
+      h6 {
         font-size: var(--font-size-m-h6);
       }
   
-      .brand-${brand.name.toLowerCase()} p {
+      p {
         font-size: var(--font-size-m-p-regular);
       }
      }

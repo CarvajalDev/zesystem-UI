@@ -283,31 +283,31 @@
      }
 
     @media (max-width: 640px) { 
-      .brand-luuna h1 {
+      h1 {
         font-size: var(--font-size-m-h1);
       }
   
-      .brand-luuna h2 {
+      h2 {
         font-size: var(--font-size-m-h2);
       }
   
-      .brand-luuna h3 {
+      h3 {
         font-size: var(--font-size-m-h3);
       }
   
-      .brand-luuna h4 {
+      h4 {
         font-size: var(--font-size-m-h4);
       }
   
-      .brand-luuna h5 {
+      h5 {
         font-size: var(--font-size-m-h5);
       }
   
-      .brand-luuna h6 {
+      h6 {
         font-size: var(--font-size-m-h6);
       }
   
-      .brand-luuna p {
+      p {
         font-size: var(--font-size-m-p-regular);
       }
      }

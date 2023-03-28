@@ -283,31 +283,31 @@
      }
 
     @media (max-width: 640px) { 
-      .brand-nooz h1 {
+      h1 {
         font-size: var(--font-size-m-h1);
       }
   
-      .brand-nooz h2 {
+      h2 {
         font-size: var(--font-size-m-h2);
       }
   
-      .brand-nooz h3 {
+      h3 {
         font-size: var(--font-size-m-h3);
       }
   
-      .brand-nooz h4 {
+      h4 {
         font-size: var(--font-size-m-h4);
       }
   
-      .brand-nooz h5 {
+      h5 {
         font-size: var(--font-size-m-h5);
       }
   
-      .brand-nooz h6 {
+      h6 {
         font-size: var(--font-size-m-h6);
       }
   
-      .brand-nooz p {
+      p {
         font-size: var(--font-size-m-p-regular);
       }
      }

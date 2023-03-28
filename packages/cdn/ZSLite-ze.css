@@ -283,31 +283,31 @@
      }
 
     @media (max-width: 640px) { 
-      .brand-ze h1 {
+      h1 {
         font-size: var(--font-size-m-h1);
       }
   
-      .brand-ze h2 {
+      h2 {
         font-size: var(--font-size-m-h2);
       }
   
-      .brand-ze h3 {
+      h3 {
         font-size: var(--font-size-m-h3);
       }
   
-      .brand-ze h4 {
+      h4 {
         font-size: var(--font-size-m-h4);
       }
   
-      .brand-ze h5 {
+      h5 {
         font-size: var(--font-size-m-h5);
       }
   
-      .brand-ze h6 {
+      h6 {
         font-size: var(--font-size-m-h6);
       }
   
-      .brand-ze p {
+      p {
         font-size: var(--font-size-m-p-regular);
       }
      }
