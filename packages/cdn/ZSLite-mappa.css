@@ -120,37 +120,37 @@
       
     } 
 
-    .brand-mappa h1 {
+    h1 {
       font-family: var(--brand-typography-font1);
       font-size: var(--font-size-d-h1);
     }
 
-    .brand-mappa h2 {
+    h2 {
       font-family: var(--brand-typography-font1);
       font-size: var(--font-size-d-h2);
     }
 
-    .brand-mappa h3 {
+    h3 {
       font-family: var(--brand-typography-font1);
       font-size: var(--font-size-d-h3);
     }
 
-    .brand-mappa h4 {
+    h4 {
       font-family: var(--brand-typography-font1);
       font-size: var(--font-size-d-h4);
     }
 
-    .brand-mappa h5 {
+    h5 {
       font-family: var(--brand-typography-font1);
       font-size: var(--font-size-d-h5);
     }
 
-    .brand-mappa h6 {
+    h6 {
       font-family: var(--brand-typography-font2);
       font-size: var(--font-size-d-h6);
     }
 
-    .brand-mappa p {
+    p {
       font-family: var(--brand-typography-font2);
       font-size: var(--font-size-d-p-regular);
     }

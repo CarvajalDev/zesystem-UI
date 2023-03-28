@@ -1,5 +1,5 @@
 const fs = require('fs'); //use for create files like .css
-const jsonData = require('../../figma/token.json'); // recive Design Tokens json file
+const jsonData = require('../../figma/token.json'); // receive Design Tokens json file
 
 
 const styleLite = {
@@ -261,11 +261,6 @@ const styleLite = {
   ]
 }
 
-//console.log(styleLite.brands[0].buttonTertiary.bgColor);
-//console.log(styleLite.brands[0].buttonTertiary.textColor);
-//console.log(styleLite.brands[0].buttonTertiary.hoverColor);
-console.log(jsonData.global.componentSize.xlarge);
-
 for (let brand of styleLite.brands) {
   // Create a CSS template with name ZSlite-brand for each brand
   const zeSystenLite = `
@@ -390,37 +385,37 @@ for (let brand of styleLite.brands) {
       
     } 
 
-    .brand-${brand.name.toLowerCase()} h1 {
+    h1 {
       font-family: var(--brand-typography-font1);
       font-size: var(--font-size-d-h1);
     }
 
-    .brand-${brand.name.toLowerCase()} h2 {
+    h2 {
       font-family: var(--brand-typography-font1);
       font-size: var(--font-size-d-h2);
     }
 
-    .brand-${brand.name.toLowerCase()} h3 {
+    h3 {
       font-family: var(--brand-typography-font1);
       font-size: var(--font-size-d-h3);
     }
 
-    .brand-${brand.name.toLowerCase()} h4 {
+    h4 {
       font-family: var(--brand-typography-font1);
       font-size: var(--font-size-d-h4);
     }
 
-    .brand-${brand.name.toLowerCase()} h5 {
+    h5 {
       font-family: var(--brand-typography-font1);
       font-size: var(--font-size-d-h5);
     }
 
-    .brand-${brand.name.toLowerCase()} h6 {
+    h6 {
       font-family: var(--brand-typography-font2);
       font-size: var(--font-size-d-h6);
     }
 
-    .brand-${brand.name.toLowerCase()} p {
+    p {
       font-family: var(--brand-typography-font2);
       font-size: var(--font-size-d-p-regular);
     }
