@@ -96,27 +96,27 @@
       --brand-radius-large: 0px;
 
       /* Buttons & inputs size height */
-      --component-size-xsmall: 4.5vh;
-      --component-size-small: 5.62vh;
-      --component-size-medium: 6.75vh;
-      --component-size-large: 7.87vh;
-      --component-size-xlarge: 10.12vh;
+      --component-size-xsmall: 3.8vh;
+      --component-size-small: 4.7vh;
+      --component-size-medium: 5.7vh;
+      --component-size-large: 6.7vh;
+      --component-size-xlarge: 8.6vh;
 
       /* Image size height (png, jpg, jpeg) */
-      --img-size-height-xsmall: 2.53vh;
-      --img-size-height-small: 3.37vh;
-      --img-size-height-medium: 4.5vh;
-      --img-size-height-large: 5.62vh;
-      --img-size-height-xlarge: 6.75vh;
-      --img-size-height-xxlarge: 10.1vh;
+      --img-size-height-xsmall: 2.1vh;
+      --img-size-height-small: 2.8vh;
+      --img-size-height-medium: 3.8vh;
+      --img-size-height-large: 4.7vh;
+      --img-size-height-xlarge: 5.7vh;
+      --img-size-height-xxlarge: 8.6vh;
 
       /* Image size width (png, jpg, jpeg) */
-      --img-size-width-xsmall: 1.25vw;
-      --img-size-width-small: 1.667vw;
-      --img-size-width-medium: 2.222vw;
-      --img-size-width-large: 2.778vw;
-      --img-size-width-xlarge: 3.333vw;
-      --img-size-width-xxlarge: 5vw;
+      --img-size-width-xsmall: 1.5vw;
+      --img-size-width-small: 2.0vw;
+      --img-size-width-medium: 2.6vw;
+      --img-size-width-large: 3.35vw;
+      --img-size-width-xlarge: 4.0vw;
+      --img-size-width-xxlarge: 6.03vw;
       
     } 
 
