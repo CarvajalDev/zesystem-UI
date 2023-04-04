@@ -385,37 +385,37 @@ for (let brand of styleLite.brands) {
       
     } 
 
-    h1 {
+    .brand-${brand.name.toLowerCase()} h1 {
       font-family: var(--brand-typography-font1);
       font-size: var(--font-size-d-h1);
     }
 
-    h2 {
+    .brand-${brand.name.toLowerCase()} h2 {
       font-family: var(--brand-typography-font1);
       font-size: var(--font-size-d-h2);
     }
 
-    h3 {
+    .brand-${brand.name.toLowerCase()} h3 {
       font-family: var(--brand-typography-font1);
       font-size: var(--font-size-d-h3);
     }
 
-    h4 {
+    .brand-${brand.name.toLowerCase()} h4 {
       font-family: var(--brand-typography-font1);
       font-size: var(--font-size-d-h4);
     }
 
-    h5 {
+    .brand-${brand.name.toLowerCase()} h5 {
       font-family: var(--brand-typography-font1);
       font-size: var(--font-size-d-h5);
     }
 
-    h6 {
+    .brand-${brand.name.toLowerCase()} h6 {
       font-family: var(--brand-typography-font2);
       font-size: var(--font-size-d-h6);
     }
 
-    p {
+    .brand-${brand.name.toLowerCase()} p {
       font-family: var(--brand-typography-font2);
       font-size: var(--font-size-d-p-regular);
     }
@@ -548,31 +548,31 @@ for (let brand of styleLite.brands) {
      }
 
     @media (max-width: 640px) { 
-      h1 {
+      .brand-${brand.name.toLowerCase()} h1 {
         font-size: var(--font-size-m-h1);
       }
   
-      h2 {
+      .brand-${brand.name.toLowerCase()} h2 {
         font-size: var(--font-size-m-h2);
       }
   
-      h3 {
+      .brand-${brand.name.toLowerCase()} h3 {
         font-size: var(--font-size-m-h3);
       }
   
-      h4 {
+      .brand-${brand.name.toLowerCase()} h4 {
         font-size: var(--font-size-m-h4);
       }
   
-      h5 {
+      .brand-${brand.name.toLowerCase()} h5 {
         font-size: var(--font-size-m-h5);
       }
   
-      h6 {
+      .brand-${brand.name.toLowerCase()} h6 {
         font-size: var(--font-size-m-h6);
       }
   
-      p {
+      .brand-${brand.name.toLowerCase()} p {
         font-size: var(--font-size-m-p-regular);
       }
      }
